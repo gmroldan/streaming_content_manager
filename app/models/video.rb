@@ -2,6 +2,8 @@ class Video < ApplicationRecord
   mount_uploader :file, VideoFileUploader
   #process_in_background :file
 
+  validates :description, :file, presence: true
+
   def set_success(format, opts)
    #self.success = true
   end
