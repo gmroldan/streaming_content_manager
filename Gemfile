@@ -69,3 +69,6 @@ gem 'streamio-ffmpeg', '~> 3.0.2'
 
 # Delayed job used by carrierwave_backgrounder
 gem 'delayed_job_active_record'
+
+# Authentication
+gem 'devise'
