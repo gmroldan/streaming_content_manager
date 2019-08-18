@@ -4,7 +4,7 @@ class VideosController < ApplicationController
   # GET /videos
   # GET /videos.json
   def index
-    @videos = Video.all
+    @videos = Video.where user_id: current_user.id
   end
 
   # GET /videos/1
@@ -24,7 +24,7 @@ class VideosController < ApplicationController
   # POST /videos
   # POST /videos.json
   def create
-    @video = Video.new(video_params)
+    @video = current_user.videos.new(video_params)
 
     respond_to do |format|
       if @video.save

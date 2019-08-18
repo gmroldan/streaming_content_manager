@@ -3,6 +3,7 @@ class Video < ApplicationRecord
   #process_in_background :file
 
   validates :description, :file, presence: true
+  belongs_to :user
 
   def set_success(format, opts)
    #self.success = true
