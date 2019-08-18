@@ -72,3 +72,7 @@ gem 'delayed_job_active_record'
 
 # Authentication
 gem 'devise'
+
+#Bootstrap
+gem 'bootstrap', '~> 4.3.1'
+gem 'jquery-rails'
