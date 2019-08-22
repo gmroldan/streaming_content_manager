@@ -15,5 +15,10 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery3
+//= require jquery.easing
 //= require popper
 //= require bootstrap-sprockets
+//= require chart-area-demo
+//= require chart-pie-demo
+//= require Chart.bundle.min
+//= require sb-admin-2.min
