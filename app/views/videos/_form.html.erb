@@ -11,27 +11,27 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :description %>
-    <%= form.text_field :description %>
+    <%= form.text_field :description, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :file %>
-    <%= form.file_field :file %>
+    <%= form.file_field :file, class: "form-control-file" %>
   </div>
 
-  <div class="field">
-    <%= form.label :is_active %>
+  <div class="form-group">
+    <%= form.label :is_active, class: "form-check-label" %>
     <%= form.check_box :is_active %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :order %>
-    <%= form.number_field :order %>
+    <%= form.number_field :order, class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'Update', class: "btn btn-primary" %>
   </div>
 <% end %>
