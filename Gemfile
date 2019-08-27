@@ -61,12 +61,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-#Video support with Carrierwave
-gem 'carrierwave-video'
-gem 'carrierwave-video-thumbnailer'
-gem 'carrierwave_backgrounder'
-gem 'streamio-ffmpeg', '~> 3.0.2'
-
 # Delayed job used by carrierwave_backgrounder
 gem 'delayed_job_active_record'
 

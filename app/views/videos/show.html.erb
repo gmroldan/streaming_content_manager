@@ -7,7 +7,7 @@
 
 <div class="form-group">
   <strong>File:</strong>
-  <%= video_tag @video.file.thumb.url %>
+  <%= video_tag(url_for(@video.file), style: 'width:40%; height: 40%', controls: '') %>
 </div>
 
 <p>
