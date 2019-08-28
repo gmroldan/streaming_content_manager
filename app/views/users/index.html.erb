@@ -1,0 +1,30 @@
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+  <h1 class="h3 mb-0 text-gray-800">Users</h1>
+</div>
+
+<%- if user_signed_in? %>
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <%= link_to new_video_path, class: 'd-none d-sm-inline-block btn btn-sm btn-primary shadow-sm' do %>
+        <i class="fas fa-plus"></i> New User
+      <% end %>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <%= render @users %>              
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+<% end %>

@@ -37,9 +37,10 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">
+          <%= link_to users_path, class: 'nav-link' do %>
             <i class="fas fa-users"></i>
-            <span>Users</span></a>
+            <span>Users</span>
+          <% end %>
         </li>
 
         <!-- Divider -->
